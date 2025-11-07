@@ -254,19 +254,16 @@ function logoutUser() {
 
 <img width="1913" height="824" alt="image" src="https://github.com/user-attachments/assets/0901d131-937d-46b3-8b53-7bcdc8a40fc9" />
 
-Login menggunakan data dummy
+- Login menggunakan data dummy
+  - Email: marsyanabila293@gmail.com
+  - Password: marsya12345
 
--Email: marsyanabila293@gmail.com
-
--Password: marsya12345
-
-Jika data login salah, akan muncul alert pemberitahuan kesalahan
+- Jika data login salah, akan muncul alert pemberitahuan kesalahan
 (contoh: “Email atau kata sandi salah!”)
 
-Tersedia modal box interaktif untuk fitur:
--“Lupa Password” — menampilkan pesan panduan reset sandi
-
--“Daftar” — menampilkan pesan bahwa fitur pendaftaran masih dalam pengembangan
+- Tersedia modal box interaktif untuk fitur:
+  - “Lupa Password” — menampilkan pesan panduan reset sandi
+  - “Daftar” — menampilkan pesan bahwa fitur pendaftaran masih dalam pengembangan
 
 
 
