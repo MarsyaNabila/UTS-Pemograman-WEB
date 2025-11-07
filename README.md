@@ -343,7 +343,10 @@ function logoutUser() {
     <thead><tr><th>ID</th><th>Judul</th><th
 ````
 
-<img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/de80bdc1-145e-422d-aca6-d85a54fa9a12" />
+<img width="1918" height="698" alt="Screenshot 2025-11-07 123609" src="https://github.com/user-attachments/assets/a07c57e2-81e5-4f04-8958-63f67b705405" />
+
+<img width="1916" height="817" alt="Screenshot 2025-11-07 123652" src="https://github.com/user-attachments/assets/0f9444b1-7166-4ca0-ac35-5689abcf0ab8" />
+
 
 # Checkout.html
 
