@@ -104,7 +104,7 @@ Data dummy aplikasi:
 
 - Katalog buku (judul, harga, stok, gambar).
 
-= Data pesanan untuk tracking.
+- Data pesanan untuk tracking.
 
 → Sebagai pengganti database.
 
