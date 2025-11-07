@@ -28,7 +28,7 @@ project/
 │   └── data.js
 │
 └── assets/
-    └── (gambar/icon jika perlu)
+    └── images/
 ```
 
 # 1. Login.html
