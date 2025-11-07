@@ -425,6 +425,47 @@ function logoutUser() {
 
 <img width="1919" height="1079" alt="Screenshot 2025-11-07 121946" src="https://github.com/user-attachments/assets/a42f9f67-74e4-4367-9db6-7743d5ef67b8" />
 
+# Tracking.html
+
+```html
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tracking Pengiriman - Toko Buku Online</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="tracking">
+<div class="container">
+  <div class="header">
+    <div class="logo">Tracking Pengiriman</div>
+    <div class="nav">
+      <a href="dashboard.html" class="btn">Dashboard</a>
+      <a href="stok.html" class="btn">Stok</a>
+      <a href="checkout.html" class="btn">Pemesanan</a>
+    </div>
+  </div>
+
+  <h3>Cek Status Pengiriman</h3>
+  <div class="form-row row">
+    <div class="col"><input id="do" placeholder="Masukkan nomor DO (contoh: DO20251101-001)"></div>
+    <div><button class="btn" id="cari">Cari</button></div>
+  </div>
+
+  <div id="hasil" style="margin-top:20px;"></div>
+
+  <p class="footer">Contoh DO tersedia: DO20251101-001 atau DO20251105-002</p>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+````
+
+
+
 
 
 
