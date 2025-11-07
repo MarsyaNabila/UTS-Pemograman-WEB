@@ -343,7 +343,8 @@ function logoutUser() {
     <thead><tr><th>ID</th><th>Judul</th><th
 ````
 
-# js/data/js
+
+# js/data.js
 
 ````js
 // ========== DATA DUMMY ==========
