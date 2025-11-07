@@ -467,7 +467,7 @@ function logoutUser() {
 
 <img width="1917" height="724" alt="Screenshot 2025-11-07 122609" src="https://github.com/user-attachments/assets/5f2cdc5a-990f-4197-992d-65813c73d633" />
 
-<img width="1917" height="816" alt="Screenshot 2025-11-07 122647" src="https://github.com/user-attachments/assets/d42a3aea-f299-4a1b-b278-ed803111b7fd" />
+<img width="1919" height="735" alt="image" src="https://github.com/user-attachments/assets/a8eea706-6731-422e-82e8-ab0faf4bffda" />
 
 
 
