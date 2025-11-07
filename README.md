@@ -87,6 +87,41 @@ project/
   - Status Pengiriman (pakai progress bar / warna / list)
   - Detail ekspedisi, tanggal kirim, jenis paket, total pembayaran
  
+# 6. css/style.css
+File gaya tampilan (UI).
+
+- Warna utama: biru & putih.
+
+- Desain modern, bersih, dan responsif.
+
+- Mengatur tabel, tombol, modal, progress bar, dan layout.
+
+
+# 7. js/data.js
+Data dummy aplikasi:
+
+- User login (email & password).
+
+- Katalog buku (judul, harga, stok, gambar).
+
+= Data pesanan untuk tracking.
+
+→ Sebagai pengganti database.
+
+# 8. js/main.js
+
+Logika utama website.
+
+- Fungsi login, logout, dan validasi form.
+
+- Render data buku ke tabel HTML.
+
+= Tambah / hapus / edit data katalog.
+
+= Hitung total checkout dan export CSV.
+
+= Simpan data ke localStorage.
+ 
 
 # Index.html
 
