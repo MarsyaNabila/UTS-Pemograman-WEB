@@ -116,9 +116,9 @@ Logika utama website.
 
 - Render data buku ke tabel HTML.
 
-= Tambah / hapus / edit data katalog.
+- Tambah / hapus / edit data katalog.
 
-= Hitung total checkout dan export CSV.
+- itung total checkout dan export CSV.
 
 = Simpan data ke localStorage.
  
