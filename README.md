@@ -390,7 +390,11 @@ Semua fungsi logika seperti menambah ke keranjang dan menghitung total diatur le
 ````
 
 
-(2 gambar)
+<img width="1917" height="724" alt="Screenshot 2025-11-07 122609" src="https://github.com/user-attachments/assets/409bcf58-7b2b-4415-beef-2fc7b58a28ad" />
+
+<img width="1919" height="735" alt="Screenshot 2025-11-07 122940" src="https://github.com/user-attachments/assets/bce77841-17a4-4e58-a02a-edcc177aeb4f" />
+
+
 
 Kode ini digunakan untuk **tracking pengiriman** pada toko buku online.
 Bagian HTML menampilkan kolom input untuk memasukkan nomor DO (Delivery Order) dan tombol **Cari** untuk memeriksa status pengiriman.
