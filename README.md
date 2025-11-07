@@ -114,5 +114,80 @@ project/
 </html>
 ````
 
+# css / style.css
+
+````css
+/* ========== STYLE TOKO BUKU ELEGAN ========== */
+:root {
+  --primary: #0f62fe;
+  --secondary: #5e5e5e;
+  --bg: #f9fbfd;
+  --white: #fff;
+  --shadow: rgba(0,0,0,0.08);
+}
+
+* { box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { margin: 0; background: var(--bg); color: #222; }
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 24px;
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.header {
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.logo { font-size:1.5rem; font-weight:700; color:var(--primary); }
+
+.nav { display:flex; gap:10px; flex-wrap:wrap; }
+
+.btn {
+  padding:8px 14px;
+  background:var(--primary);
+  color:#fff; border:none; border-radius:6px;
+  cursor:pointer; text-decoration:none;
+  transition:0.3s;
+}
+.btn:hover { background:#0043ce; }
+.btn.secondary { background:var(--secondary); }
+.btn.secondary:hover { background:#333; }
+
+input, select, textarea {
+  width:100%; padding:10px; border:1px solid #ddd; border-radius:8px;
+  font-size:0.95rem;
+}
+
+.table { width:100%; border-collapse:collapse; margin-top:15px; }
+.table th, .table td { border:1px solid #e7e7e7; padding:10px; }
+.table th { background:#eef3ff; }
+
+.form-row { margin-bottom:12px; }
+label { display:block; margin-bottom:6px; font-weight:600; }
+
+.small { font-size:0.9rem; color:#555; }
+.footer { text-align:center; font-size:0.85rem; color:#777; margin-top:16px; }
+
+.modal-backdrop {
+  position:fixed; inset:0; background:rgba(0,0,0,0.6);
+  display:flex; align-items:center; justify-content:center; z-index:999;
+}
+.modal { background:#fff; padding:20px; border-radius:12px; width:90%; max-width:400px; }
+
+.progress { background:#e9eef9; height:14px; border-radius:10px; overflow:hidden; }
+.progress span { display:block; height:100%; background:var(--primary); transition:width .4s ease; }
+
+.actions { display:flex; gap:8px; justify-content:flex-end; margin-top:12px; }
+.row { display:flex; gap:16px; flex-wrap:wrap; }
+.col { flex:1; }
+
+.export-box { text-align:right; margin-top:10px; }
+```
+
 
 
