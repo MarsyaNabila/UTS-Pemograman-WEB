@@ -210,7 +210,7 @@ Logika utama website.
   
   - Menampilkan sapaan otomatis sesuai waktu, misalnya:
    
- 👉 “Selamat pagi, Marsya Nabila!” atau “Selamat siang, Marsya Nabila!”
+  “Selamat pagi, Marsya Nabila!” atau “Selamat siang, Marsya Nabila!”
 
 - Di bagian kanan atas terdapat tombol navigasi cepat:
   
