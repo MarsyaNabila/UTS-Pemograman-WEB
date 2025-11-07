@@ -252,7 +252,12 @@ Logika utama website.
     <thead><tr><th>ID</th><th>Judul</th><th
 ````
 
-(3 gambar)
+<img width="1918" height="698" alt="Screenshot 2025-11-07 123609" src="https://github.com/user-attachments/assets/17d2ff01-4030-4067-a43a-a0570774c7aa" />
+
+<img width="1916" height="817" alt="Screenshot 2025-11-07 123652" src="https://github.com/user-attachments/assets/b46461e0-aad6-468e-8504-05be70572eb1" />
+
+<img width="1905" height="700" alt="Screenshot 2025-11-07 123703" src="https://github.com/user-attachments/assets/6b7c822a-a1b7-4615-a6c5-d3132b696326" />
+
 
 Pada bagian halaman **stok.html** yang menampilkan daftar buku dalam tabel.
 Bagian HTML berisi form untuk menambah data baru (ID, judul, stok, harga) dan tombol **Tambah** untuk menampilkan form input.
