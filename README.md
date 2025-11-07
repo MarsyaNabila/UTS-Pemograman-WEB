@@ -33,68 +33,54 @@ project/
 
 # 1. Login.html
 
-Input: email dan password
+- Input: email dan password
 
-Tombol: Login
+- Tombol: Login
+  - Jika salah → tampilkan alert("email/password yang anda masukkan salah")
 
-Jika salah → tampilkan alert("email/password yang anda masukkan salah")
+- Tambahan:
+  - Tombol “Lupa Password” dan “Daftar” → muncul dalam modal box/pop up
 
-Tambahan:
-
-Tombol “Lupa Password” dan “Daftar” → muncul dalam modal box/pop up
-
-Validasi menggunakan JavaScript
+- Validasi menggunakan JavaScript
 
 # 2. Dashboard.html
 
-Menu navigasi ke:
+- Menu navigasi ke:
+  - Informasi Stok/Katalog
+  - Tracking Pengiriman
+  - Laporan Pemesanan
+  - History Transaksi
 
-Informasi Stok/Katalog
-
-Tracking Pengiriman
-
-Laporan Pemesanan
-
-History Transaksi
-
-Tampilkan greeting otomatis:
-
-“Selamat pagi/siang/sore” sesuai waktu lokal (gunakan Date() di JS)
+- Tampilkan greeting otomatis:
+ - “Selamat pagi/siang/sore” sesuai waktu lokal (gunakan Date() di JS)
 
 # 3. Stok.html
 
-Ambil data dari file data.js:
+- Ambil data dari file **data.js:**
 
-Tampilkan tabel katalog buku secara dinamis (JS DOM)
+- Tampilkan tabel katalog buku secara **dinamis (JS DOM)**
 
-Ada tombol Tambah Stok Baru → menambah baris baru ke tabel dengan JS
+- Ada tombol **Tambah Stok Baru** → menambah baris baru ke tabel dengan JS
 
 # 4. Checkout.html
 
-Menampilkan data pemesanan (bisa tambah/ubah)
+- Menampilkan data pemesanan (bisa tambah/ubah)
 
-Form:
+- Form:
+  - Nama Pemesan
+  - Alamat
+  - Metode Pembayaran
+  - Jumlah buku
 
-Nama Pemesan
-
-Alamat
-
-Metode Pembayaran
-
-Jumlah buku
-
-Gunakan JS untuk validasi & menampilkan total harga
+- Gunakan JS untuk validasi & menampilkan total harga
 
 # 5. Tracking.html
 
-Input: Nomor Delivery Order
+- Input: **Nomor Delivery Order**
 
-Ketika tombol "Cari" ditekan → tampilkan:
-
-Nama Pemesan
-
-Status Pengiriman (pakai progress bar / warna / list)
-
-Detail ekspedisi, tanggal kirim, jenis paket, total pembayaran
+- Ketika tombol "Cari" ditekan → tampilkan:
+  - Nama Pemesan
+  - Status Pengiriman (pakai progress bar / warna / list)
+  - Detail ekspedisi, tanggal kirim, jenis paket, total pembayaran
 
 
