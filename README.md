@@ -299,13 +299,18 @@ function logoutUser() {
 <img width="1866" height="479" alt="image" src="https://github.com/user-attachments/assets/b2c523c2-f99f-463f-a5cd-2c63594ee441" />
 
 - Halaman ini muncul setelah pengguna berhasil login dengan data yang benar (marsyanabila293@gmail.com / marsya12345).
+  
  - Menampilkan sapaan otomatis sesuai waktu, misalnya:
+   
  👉 “Selamat pagi, Marsya Nabila!” atau “Selamat siang, Marsya Nabila!”
 
 - Di bagian kanan atas terdapat tombol navigasi cepat:
   -🔵 Stok → menuju halaman daftar buku
+  
   -🔵 Pemesanan → menuju halaman pembelian
+  
   -🔵 Tracking → menuju pelacakan pesanan
+  
   -⚫ Logout → keluar dari akun dan kembali ke halaman login
 
 
