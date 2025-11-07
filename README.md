@@ -331,7 +331,7 @@ function logoutUser() {
 </html>
 ````
 
-<img width="1866" height="479" alt="image" src="https://github.com/user-attachments/assets/b2c523c2-f99f-463f-a5cd-2c63594ee441" />
+(gambar)
 
 - Halaman ini muncul setelah pengguna berhasil login dengan data yang benar (marsyanabila293@gmail.com / marsya12345).
   
@@ -378,12 +378,7 @@ function logoutUser() {
     <thead><tr><th>ID</th><th>Judul</th><th
 ````
 
-<img width="1918" height="698" alt="Screenshot 2025-11-07 123609" src="https://github.com/user-attachments/assets/a07c57e2-81e5-4f04-8958-63f67b705405" />
-
-<img width="1916" height="817" alt="Screenshot 2025-11-07 123652" src="https://github.com/user-attachments/assets/0f9444b1-7166-4ca0-ac35-5689abcf0ab8" />
-
-<img width="1905" height="700" alt="Screenshot 2025-11-07 123703" src="https://github.com/user-attachments/assets/92b7dcc2-7fe0-4827-91e1-369ba557ca21" />
-
+(3 gambar)
 
 
 # Checkout.html
@@ -460,11 +455,7 @@ function logoutUser() {
 </html>
 ````
 
-<img width="1916" height="1072" alt="Screenshot 2025-11-07 121846" src="https://github.com/user-attachments/assets/2fc81850-c1b7-4875-99a7-ac59e90efb16" />
-
-<img width="1919" height="1079" alt="Screenshot 2025-11-07 121936" src="https://github.com/user-attachments/assets/8ea68530-7e6c-4ec2-bf14-40f707d60ba6" />
-
-<img width="1919" height="1079" alt="Screenshot 2025-11-07 121946" src="https://github.com/user-attachments/assets/a42f9f67-74e4-4367-9db6-7743d5ef67b8" />
+(3 gambar)
 
 # Tracking.html
 
@@ -506,10 +497,7 @@ function logoutUser() {
 ````
 
 
-<img width="1917" height="724" alt="Screenshot 2025-11-07 122609" src="https://github.com/user-attachments/assets/5f2cdc5a-990f-4197-992d-65813c73d633" />
-
-<img width="1919" height="735" alt="image" src="https://github.com/user-attachments/assets/a8eea706-6731-422e-82e8-ab0faf4bffda" />
-
+(2 gambar)
 
 
 
