@@ -233,30 +233,136 @@ Logika utama website.
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Stok Buku</title>
-<link rel="stylesheet" href="css/style.css">
+<style>
+  body { font-family: Arial, sans-serif; background: #f4f6fb; margin: 0; }
+  .container {
+    background: #fff; padding: 20px; border-radius: 10px;
+    width: 85%; margin: 40px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  h2 { color: #0044ff; margin-bottom: 10px; }
+  .btn {
+    background: #0066ff; color: #fff; border: none;
+    padding: 8px 16px; border-radius: 5px; cursor: pointer; margin: 5px 0;
+  }
+  .btn:hover { opacity: 0.9; }
+  input {
+    padding: 6px; margin: 3px; border-radius: 4px;
+    border: 1px solid #ccc; width: 160px;
+  }
+  table {
+    width: 100%; border-collapse: collapse; margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd; padding: 8px; text-align: center;
+  }
+  th { background: #e5e9ff; }
+  img {
+    width: 70px; height: 90px; border-radius: 4px;
+    object-fit: cover; background: #f0f0f0;
+  }
+</style>
 </head>
+
 <body id="stok">
 <div class="container">
   <h2>Data Stok Buku</h2>
   <button class="btn" id="tambah">Tambah</button>
 
-  <div id="formTambah" style="display:none;margin-top:10px;">
+  <div id="formTambah" style="display:none; margin-top:10px;">
     <input id="id" placeholder="ID">
     <input id="judul" placeholder="Judul Buku">
-    <input id="stok" type="number" placeholder="Stok">
+    <input id="stokInput" type="number" placeholder="Stok">
     <input id="harga" type="number" placeholder="Harga">
     <button class="btn" id="simpan">Simpan</button>
   </div>
 
   <table class="table">
-    <thead><tr><th>ID</th><th>Judul</th><th
+    <thead>
+      <tr>
+        <th>Gambar</th>
+        <th>ID</th>
+        <th>Judul Buku</th>
+        <th>Stok</th>
+        <th>Harga</th>
+      </tr>
+    </thead>
+    <tbody id="tabelBuku"></tbody>
+  </table>
+</div>
+
+<script>
+  // === Gambar SVG sederhana untuk tiga buku ===
+  const gambarWeb = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEwMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeT0iMTAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNSIgZmlsbD0iIzAwNjZGRiIvPjxwYXRoIGQ9Ik0xMCAxMCBMMTAwIDEwMCAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgeD0iNTAiIHk9IjYwIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjEwIiBmb250LWZhbWlseT0iQXJpYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlBFTVJPR1JBTSBXRUI8L3RleHQ+PC9zdmc+";
+  const gambarDB = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEwMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeT0iMTAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNSIgZmlsbD0iI0ZGMzMwMCIvPjxwYXRoIGQ9Ik0xMCAxMCBMMTAwIDEwMCAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgeD0iNTAiIHk9IjYwIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjEwIiBmb250LWZhbWlseT0iQXJpYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkRBVEFCQVNFPC90ZXh0Pjwvc3ZnPg==";
+  const gambarAlgo = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEwMCAxMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeT0iMTAiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiByeD0iNSIgZmlsbD0iIzVGMDA4MCIvPjxwYXRoIGQ9Ik0xMCAxMCBMMTAwIDEwMCAiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHRleHQgeD0iNTAiIHk9IjYwIiBmaWxsPSIjZmZmIiBmb250LXNpemU9IjEwIiBmb250LWZhbWlseT0iQXJpYWwiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkFMR09SSVRNQTwvdGV4dD48L3N2Zz4=";
+
+  const dataBuku = [
+    { id: 1, judul: "Pemrograman Web Dasar", stok: 10, harga: 75000, gambar: gambarWeb },
+    { id: 2, judul: "Database & SQL", stok: 6, harga: 90000, gambar: gambarDB },
+    { id: 3, judul: "Algoritma dan Struktur Data", stok: 8, harga: 98000, gambar: gambarAlgo }
+  ];
+
+  const tabelBuku = document.getElementById("tabelBuku");
+  const tombolTambah = document.getElementById("tambah");
+  const formTambah = document.getElementById("formTambah");
+  const tombolSimpan = document.getElementById("simpan");
+
+  function tampilkanData() {
+    tabelBuku.innerHTML = "";
+    dataBuku.forEach(buku => {
+      const baris = document.createElement("tr");
+      baris.innerHTML = `
+        <td><img src="${buku.gambar}" alt="${buku.judul}"></td>
+        <td>${buku.id}</td>
+        <td>${buku.judul}</td>
+        <td>${buku.stok}</td>
+        <td>Rp ${buku.harga.toLocaleString()}</td>
+      `;
+      tabelBuku.appendChild(baris);
+    });
+  }
+
+  tampilkanData();
+
+  // 🔹 Klik tombol tambah untuk tampilkan/sembunyikan form
+  tombolTambah.addEventListener("click", () => {
+    formTambah.style.display = formTambah.style.display === "none" ? "block" : "none";
+  });
+
+  // 🔹 Klik tombol simpan untuk tambah buku baru
+  tombolSimpan.addEventListener("click", () => {
+    const id = document.getElementById("id").value.trim();
+    const judul = document.getElementById("judul").value.trim();
+    const stok = document.getElementById("stokInput").value.trim();
+    const harga = document.getElementById("harga").value.trim();
+
+    if (id && judul && stok && harga) {
+      dataBuku.push({ id: parseInt(id), judul, stok: parseInt(stok), harga: parseInt(harga), gambar: gambarWeb });
+      tampilkanData();
+      formTambah.style.display = "none";
+      document.getElementById("id").value = "";
+      document.getElementById("judul").value = "";
+      document.getElementById("stokInput").value = "";
+      document.getElementById("harga").value = "";
+      alert("✅ Buku baru berhasil ditambahkan!");
+    } else {
+      alert("❌ Lengkapi semua data terlebih dahulu!");
+    }
+  });
+</script>
+</body>
+</html>
+
 ````
 
-<img width="1918" height="698" alt="Screenshot 2025-11-07 123609" src="https://github.com/user-attachments/assets/17d2ff01-4030-4067-a43a-a0570774c7aa" />
+<img width="1910" height="903" alt="Screenshot 2025-11-07 143343" src="https://github.com/user-attachments/assets/70fe3a6c-b146-4a87-a35e-d198c68c01f4" />
 
-<img width="1916" height="817" alt="Screenshot 2025-11-07 123652" src="https://github.com/user-attachments/assets/b46461e0-aad6-468e-8504-05be70572eb1" />
+<img width="1909" height="958" alt="Screenshot 2025-11-07 143426" src="https://github.com/user-attachments/assets/b7a2c5b3-8d71-4059-8a7b-35c6aa35914d" />
 
-<img width="1905" height="700" alt="Screenshot 2025-11-07 123703" src="https://github.com/user-attachments/assets/6b7c822a-a1b7-4615-a6c5-d3132b696326" />
+<img width="1879" height="943" alt="Screenshot 2025-11-07 143435" src="https://github.com/user-attachments/assets/c4c8ae30-7e2c-40b5-b2d6-65cbe9afe198" />
+
+
 
 
 Pada bagian halaman **stok.html** yang menampilkan daftar buku dalam tabel.
