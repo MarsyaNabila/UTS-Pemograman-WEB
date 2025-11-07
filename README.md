@@ -120,7 +120,7 @@ Logika utama website.
 
 - itung total checkout dan export CSV.
 
-= Simpan data ke localStorage.
+- Simpan data ke localStorage.
  
 
 # Index.html
