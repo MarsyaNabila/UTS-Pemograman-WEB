@@ -300,11 +300,12 @@ function logoutUser() {
 
 - Halaman ini muncul setelah pengguna berhasil login dengan data yang benar (marsyanabila293@gmail.com / marsya12345).
   
- - Menampilkan sapaan otomatis sesuai waktu, misalnya:
+  - Menampilkan sapaan otomatis sesuai waktu, misalnya:
    
  👉 “Selamat pagi, Marsya Nabila!” atau “Selamat siang, Marsya Nabila!”
 
 - Di bagian kanan atas terdapat tombol navigasi cepat:
+  
   -🔵 Stok → menuju halaman daftar buku
   
   -🔵 Pemesanan → menuju halaman pembelian
