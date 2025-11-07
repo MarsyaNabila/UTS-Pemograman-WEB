@@ -7,7 +7,11 @@ NIM: 312410338
 KELAS: TI.24.A4
 
 # Tujuan Tugas
-Membuat **Aplikasi Web sederhana untuk pemesanan buku online** menggunakan **HTML, CSS, dan JavaScript**
+
+Website ini dibuat untuk memenuhi tuga **Ujian Tengah Semester (UTS) Pemograman Web 1** Proyek ini menampilkan **aplikasi web sederhana** untuk **pemesanan buku online** menggunakan **HTML, CSS, dan JavaScript murni** tanpa database.
+
+Website terdiri dari beberapa halaman utama: login, dashboard, stok buku, checkout, dan tracking pengiriman.
+
 
 # Struktur Project
 
