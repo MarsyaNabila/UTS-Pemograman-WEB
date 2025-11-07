@@ -204,7 +204,8 @@ Logika utama website.
 </html>
 ````
 
-(gambar)
+<img width="1866" height="479" alt="Screenshot 2025-11-07 114348" src="https://github.com/user-attachments/assets/4593007f-770e-4a24-9fe7-326d8a55a350" />
+
 
 - Halaman ini muncul setelah pengguna berhasil login dengan data yang benar (marsyanabila293@gmail.com / marsya12345).
   
