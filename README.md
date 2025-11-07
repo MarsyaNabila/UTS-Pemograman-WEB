@@ -345,6 +345,91 @@ function logoutUser() {
 
 <img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/de80bdc1-145e-422d-aca6-d85a54fa9a12" />
 
+# Checkout.html
+
+````html
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pemesanan Buku - Toko Buku Online</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="checkout">
+<div class="container">
+  <div class="header">
+    <div class="logo">Pemesanan Buku</div>
+    <div class="nav">
+      <a href="dashboard.html" class="btn">Dashboard</a>
+      <a href="stok.html" class="btn">Stok</a>
+      <a href="tracking.html" class="btn">Tracking</a>
+    </div>
+  </div>
+
+  <h3>Form Pemesanan</h3>
+  <div class="row">
+    <div class="col">
+      <div class="form-row">
+        <label>Pilih Buku</label>
+        <select id="buku">
+          <option value="">-- Pilih Buku --</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label>Jumlah</label>
+        <input id="qty" type="number" min="1" value="1">
+      </div>
+      <div class="actions">
+        <button class="btn" id="tambahCart">Tambah ke Keranjang</button>
+      </div>
+
+      <h4>Keranjang Pesanan</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Judul Buku</th>
+            <th>Qty</th>
+            <th>Harga</th>
+            <th>Subtotal</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+      <p class="small">Total: <strong id="total">Rp 0</strong></p>
+      <div class="export-box">
+  <button class="btn secondary" id="exportCsv">Export Laporan (CSV)</button>
+</div>
+
+    </div>
+
+    <div class="col">
+      <h4>Data Pemesan</h4>
+      <div class="form-row"><label>Nama</label><input id="nama"></div>
+      <div class="form-row"><label>Alamat</label><textarea id="alamat" rows="4"></textarea></div>
+      <div class="actions"><button class="btn" id="pesan">Kirim Pesanan</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+````
+
+<img width="1916" height="1072" alt="Screenshot 2025-11-07 121846" src="https://github.com/user-attachments/assets/2fc81850-c1b7-4875-99a7-ac59e90efb16" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-11-07 121936" src="https://github.com/user-attachments/assets/8ea68530-7e6c-4ec2-bf14-40f707d60ba6" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-11-07 121946" src="https://github.com/user-attachments/assets/a42f9f67-74e4-4367-9db6-7743d5ef67b8" />
+
+
+
+
+
+
 
 
 
