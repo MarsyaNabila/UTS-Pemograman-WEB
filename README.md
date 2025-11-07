@@ -446,7 +446,11 @@ JavaScript digunakan untuk menampilkan data awal dari array `dataBuku`, menambah
 </html>
 ````
 
-(3 gambar)
+<img width="1916" height="1072" alt="Screenshot 2025-11-07 121846" src="https://github.com/user-attachments/assets/ecfacd33-19ca-4940-b6e6-afe5e352cb8b" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-11-07 121946" src="https://github.com/user-attachments/assets/c590126f-dada-428b-9203-0388bdc55269" />
+
+
 
 Kode ini membuat halaman **pemesanan buku** pada toko buku online.
 Bagian HTML menampilkan form untuk memilih buku, mengisi jumlah, serta menambahkan ke keranjang belanja.
