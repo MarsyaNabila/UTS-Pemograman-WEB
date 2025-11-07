@@ -264,6 +264,50 @@ function logoutUser() {
 - Tersedia modal box interaktif untuk fitur:
   - “Lupa Password” — menampilkan pesan panduan reset sandi
   - “Daftar” — menampilkan pesan bahwa fitur pendaftaran masih dalam pengembangan
+ 
+
+# Dashboard.html
+
+````html
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard - Toko Buku</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="dashboard">
+<div class="container">
+  <div class="header">
+    <div class="logo">Dashboard</div>
+    <div class="nav">
+      <a href="stok.html" class="btn">Stok</a>
+      <a href="checkout.html" class="btn">Pemesanan</a>
+      <a href="tracking.html" class="btn">Tracking</a>
+      <button class="btn secondary" id="logout">Logout</button>
+    </div>
+  </div>
+  <h3 id="greet"></h3>
+</div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+````
+
+<img width="1866" height="479" alt="image" src="https://github.com/user-attachments/assets/b2c523c2-f99f-463f-a5cd-2c63594ee441" />
+
+- Halaman ini muncul setelah pengguna berhasil login dengan data yang benar (marsyanabila293@gmail.com / marsya12345).
+ - Menampilkan sapaan otomatis sesuai waktu, misalnya:
+ 👉 “Selamat pagi, Marsya Nabila!” atau “Selamat siang, Marsya Nabila!”
+
+- Di bagian kanan atas terdapat tombol navigasi cepat:
+  -🔵 Stok → menuju halaman daftar buku
+  -🔵 Pemesanan → menuju halaman pembelian
+  -🔵 Tracking → menuju pelacakan pesanan
+  -⚫ Logout → keluar dari akun dan kembali ke halaman login
+
 
 
 
