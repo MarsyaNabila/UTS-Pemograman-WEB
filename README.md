@@ -253,6 +253,12 @@ Logika utama website.
 
 (3 gambar)
 
+Pada bagian halaman **stok.html** yang menampilkan daftar buku dalam tabel.
+Bagian HTML berisi form untuk menambah data baru (ID, judul, stok, harga) dan tombol **Tambah** untuk menampilkan form input.
+Bagian CSS mengatur tampilan agar rapi dan berwarna biru.
+JavaScript digunakan untuk menampilkan data awal dari array `dataBuku`, menambah buku baru ke tabel, serta menampilkan pesan saat data berhasil disimpan atau belum lengkap.
+
+
 
 # Checkout.html
 
@@ -330,6 +336,14 @@ Logika utama website.
 
 (3 gambar)
 
+Kode ini membuat halaman **pemesanan buku** pada toko buku online.
+Bagian HTML menampilkan form untuk memilih buku, mengisi jumlah, serta menambahkan ke keranjang belanja.
+Terdapat tabel untuk menampilkan daftar pesanan dengan kolom judul buku, jumlah, harga, dan subtotal.
+Bagian kanan berisi form data pemesan seperti nama dan alamat, serta tombol **Kirim Pesanan**.
+Ada juga tombol **Export CSV** untuk menyimpan laporan pesanan.
+Semua fungsi logika seperti menambah ke keranjang dan menghitung total diatur lewat file JavaScript eksternal `data.js` dan `main.js`.
+
+
 # Tracking.html
 
 ```html
@@ -372,6 +386,11 @@ Logika utama website.
 
 (2 gambar)
 
+Kode ini digunakan untuk **tracking pengiriman** pada toko buku online.
+Bagian HTML menampilkan kolom input untuk memasukkan nomor DO (Delivery Order) dan tombol **Cari** untuk memeriksa status pengiriman.
+Hasil pencarian akan ditampilkan di bagian bawah dalam elemen dengan id `hasil`.
+Navigasi di bagian atas memudahkan pengguna berpindah ke halaman **Dashboard**, **Stok**, atau **Pemesanan**.
+Semua proses pencarian dan data status pengiriman diatur melalui file JavaScript eksternal `data.js` dan `main.js`.
 
 
 
