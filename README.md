@@ -31,7 +31,7 @@ project/
     └── images/
 ```
 
-# 1. Login.html
+# 1. Index.html
 
 - Input: email dan password
 
